@@ -39,3 +39,12 @@
 18. ```git revert --no-edit 'codigo do commit'``` > volta o repositorio para o commit correspondente ao codigo. obs: se omitir --no-edit sera solicitado nova mesagem do commit
 19. ```git reset --hard 'codigo do commit'``` > semelhante ao revert porém apaga todos os commit posteriores ao commit passado. Não recomendado se quiser manter o historico do codigo
 
+###Trabalhando com repositórios remotos
+1. ```git init --bare 'nome repositorio'``` > No servidor, inicia um repositŕio remoto
+2. ```git remote add 'nome do repositorio' 'url'``` > Adiciona um repositório remoto, obs: nome não precisa ser igual ao do servidor
+3. ```git remote -v``` > Exibe o nome e a url dos repositórios remotos, sem o -v só o nome
+4. ```git remote rename 'nome atual' 'novo nome'``` > Muda o nome do repositório
+5. ```git remote set-url 'nome repositorio' 'nova url'``` > Muda o endereço do repositorio
+6. ```git push 'nome repositorio' 'nome branch'``` > envia os commits para o repositorio remoto
+7. ```git clone 'url do repositorio'``` > Clona o repositorio
+8. ```git pull 'nome do repositorio remoto' 'nome do branch local'``` > Baixando commit do servidor
