@@ -40,7 +40,7 @@
 19. ```git reset --hard 'codigo do commit'``` > semelhante ao revert porém apaga todos os commit posteriores ao commit passado. Não recomendado se quiser manter o historico do codigo
 
 ###Trabalhando com repositórios remotos
-1. ```git init --bare 'nome repositorio'``` > No servidor, inicia um repositŕio remoto
+1. ```git init --bare 'nome repositorio'``` > No servidor, inicia um repositório remoto
 2. ```git remote add 'nome do repositorio' 'url'``` > Adiciona um repositório remoto, obs: nome não precisa ser igual ao do servidor
 3. ```git remote -v``` > Exibe o nome e a url dos repositórios remotos, sem o -v só o nome
 4. ```git remote rename 'nome atual' 'novo nome'``` > Muda o nome do repositório
@@ -48,3 +48,11 @@
 6. ```git push 'nome repositorio' 'nome branch'``` > envia os commits para o repositorio remoto
 7. ```git clone 'url do repositorio'``` > Clona o repositorio
 8. ```git pull 'nome do repositorio remoto' 'nome do branch local'``` > Baixando commit do servidor
+
+####Tipos de protocolos para acesso a repositorios remotos
+1. Local (utilizado quando o repositório remoto esta na mesma máquina) url -> ```git clone file:///opt/rep/meuRep.git``` ou ```git clone /opt/rep/meuRep.git```
+2. SSH (Mais recomendado) url -> ```git clone user@192.168.0.105:/opt/rep/meuRep.git```
+3. Git (Similar ao SSH porém menos seguro) url -> ```git clone git://192.168.0.105/opt/rep/meuRep.git``` 
+4. Http ou Https url -> ```git clone http://192.168.0.105/opt/rep/meuRep.git``` ou ```git clone https://192.168.0.105/opt/rep/meuRep.git```
+
+
