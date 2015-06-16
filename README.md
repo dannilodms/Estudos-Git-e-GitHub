@@ -55,4 +55,14 @@
 3. Git (Similar ao SSH porém menos seguro) url -> ```git clone git://192.168.0.105/opt/rep/meuRep.git``` 
 4. Http ou Https url -> ```git clone http://192.168.0.105/opt/rep/meuRep.git``` ou ```git clone https://192.168.0.105/opt/rep/meuRep.git```
 
+###Trabalhando com branchs
+1. ```git branch -v``` > Mostra o branch atual, sem -v não mostra o ultimo commit
+2. ```git log --oneline --decorate --parents``` > Mostra todos os commits os branchs ao qual pertencentem
+3. ```git branch 'nome'``` > cria um branch com o nome informado
+4. ```git checkout 'nome branch'``` > Muda para o branch informado
+5. ```git checkout -b 'novo branch'``` > cria novo branch e muda para ele
+6. ```git branch -d ou -D``` > Com -d apaga o branch porém se as alterações ainda não foram aplicadas a outros brenchs deve-se usar -D
+7. ```git branch --no-merged``` > mostra branchs ainda não mesclados com o atual
+8. ```git merge 'nome do branch a ser mesclado com o atual' -m 'mensagem'``` > Mescla os branchs
+9. ```git rebase 'nome do branch'``` > Mescla com o branch informado, e ambos os branch ficam com o mesmo historico
 
