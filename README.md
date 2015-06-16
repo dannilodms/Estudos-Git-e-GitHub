@@ -74,3 +74,13 @@
 5. ```git pull --rebase``` > mesmo efeito de mesclar com rebase
 6. ```git push 'nome repositorio remoto' :'nome do branch remoto'``` > remove o branc remoto informado
 
+###Trabalhando com tags
+1. ```git tag 'nome da tag'``` > Cria uma tag
+2. ```git tag 'nome tag' 'numero do commit'``` > cria uma tag para um commit especifico 
+3. ```git tag``` > lista todas as tags
+4. ```git tag -d 'nome da tag'``` > apaga a tag informada
+5. ```git tag -a 'nome tag' -m 'mensagem'``` > cria tag anotada, que são tags com informações a mais
+6. ```git show -s 'nome tag'``` > mostra as informações da tag anotada
+7. ```git push 'nome do repositorio remoto' 'nome tag'``` > envia a tag para o repositorio remoto
+8. ```git push 'nome repositorio remoto' --tags``` > envia todas as tags
+
