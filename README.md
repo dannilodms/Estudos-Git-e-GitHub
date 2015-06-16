@@ -45,7 +45,7 @@
 3. ```git remote -v``` > Exibe o nome e a url dos repositórios remotos, sem o -v só o nome
 4. ```git remote rename 'nome atual' 'novo nome'``` > Muda o nome do repositório
 5. ```git remote set-url 'nome repositorio' 'nova url'``` > Muda o endereço do repositorio
-6. ```git push 'nome repositorio' 'nome branch'``` > envia os commits para o repositorio remoto
+6. ```git push 'nome repositorio' 'nome branch a ser enviado'``` > envia os commits para o repositorio remoto
 7. ```git clone 'url do repositorio'``` > Clona o repositorio
 8. ```git pull 'nome do repositorio remoto' 'nome do branch local'``` > Baixando commit do servidor
 
@@ -65,4 +65,12 @@
 7. ```git branch --no-merged``` > mostra branchs ainda não mesclados com o atual
 8. ```git merge 'nome do branch a ser mesclado com o atual' -m 'mensagem'``` > Mescla os branchs
 9. ```git rebase 'nome do branch'``` > Mescla com o branch informado, e ambos os branch ficam com o mesmo historico
+
+###Trabalhando com branchs remotos
+1. ```git branch (-r ou -a) -v``` > -r lista branchs remotos -a lista os locais e remotos e com -v junto a uma das opções mostra o ultimo commit do branch
+2. relembrando que 6. ```git push 'nome repositorio remoto' 'nome branch a ser enviado'``` envia um branch escolhido para o repositorio remoto
+3. ```git fetch 'nome do repositorio remoto'``` > obtem os commits do branch remoto
+4. ```git pull``` > quando sem paremetros obtens o commits do branch remoto e mescla do o local
+5. ```git pull --rebase``` > mesmo efeito de mesclar com rebase
+6. ```git push 'nome repositorio remoto' :'nome do branch remoto'``` > remove o branc remoto informado
 
