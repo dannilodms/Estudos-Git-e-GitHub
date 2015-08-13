@@ -33,7 +33,7 @@
 12. ```git rm 'arquivo'``` > mesmo funcionamento do add porém para remoção de arquivos
 13. ```git mv 'nome atual' 'nome desejado'``` > renomeia um arquivo obs: mesmo comando do linux
 14. ```git mv 'arquivo' 'subDir/arquivo'``` > move o arquivo obs: mesmo comando do linux
-15. ```git checkout -- 'arquivo' > desfaz as alterações que não estão na área de stage no arquivo
+15. ```git checkout -- 'arquivo'``` > desfaz as alterações que não estão na área de stage no arquivo
 16. ```git reset -- 'arquivo' ou sem paremetros``` > remove os arquivo passados como parametro da área de stage, ou de todos os arquivos casa não tenha paramentros
 17. ```git reset --hard``` > remove os arquivos da área de stage e desfaz as mudanças feitas nesses arquivos
 18. ```git revert --no-edit 'codigo do commit'``` > volta o repositorio para o commit correspondente ao codigo. obs: se omitir --no-edit sera solicitado nova mesagem do commit
